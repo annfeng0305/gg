@@ -35,3 +35,55 @@ article.intro {
     background-size: cover;
     border-radius: 1%;
 }
+
+div.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 80px;
+    color: white;
+}
+
+article.product_display {
+    margin-top: 5%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10%;
+}
+
+.product_photo {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.product_1 {
+    padding: 5px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.product_2 {
+    padding: 5px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.product_3 {
+    padding: 5px;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.product_4 {
+    padding: 5px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.product_5 {
+    padding: 5px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.product_6 {
+    padding: 5px;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
