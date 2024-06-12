@@ -1,0 +1,270 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f6f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.product-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.star {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.star.selected,
+.star.hover {
+    color: #ff0;
+}
+
+.star:hover,
+.star:hover ~ .star,
+.star.selected {
+    color: #ff0;
+}
+
+.rating-value {
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 90%;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding-top: 20px;
+    border-radius: 20px;
+    border: 1px solid #fafafa;
+    background-color: #ff4b2b;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+.comments-section {
+    text-align: left;
+}
+
+.comment {
+    background: #f9f9f9;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 991px) {
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0px;
+  }
+}
+
+.image-column {
+  display: flex;
+  flex-direction: column;
+  width: 56%;
+}
+
+@media (max-width: 991px) {
+  .image-column {
+    width: 100%;
+  }
+}
+
+.product-image {
+  aspect-ratio: 1.61;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  padding-top:20%;
+}
+
+.details-column {
+  display: flex;
+  flex-direction: column;
+  width: 44%;
+  margin-left: 20px;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  font-weight: 600;
+  line-height: 150%;
+  padding: 37px 20px 80px;
+}
+.product-name {
+  font: 40px/110% Inter, sans-serif;
+}
+
+.clause {
+  color: #828282;
+  margin-top: 24px;
+  font: 24px Inter, sans-serif;
+}
+
+.product-price {
+  margin-top: 24px;
+  font: 400 24px Inter, sans-serif;
+}
+
+.product-description {
+  color: #828282;
+  margin-top: 24px;
+  font: 500 20px Inter, sans-serif;
+}
+
+.add-to-cart-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #737c58;
+  margin-top: 24px;
+  color: #fff;
+  white-space: nowrap;
+  padding: 14px 24px;
+  font: 500 16px Inter, sans-serif;
+}
+.page-container {
+    top: 100px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .main-header {
+    background-color: #fffcef;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+ 
+  .header-content {
+    display: flex;
+    width: 100%;
+    
+    flex-direction: column;
+    align-items: center;
+  }
+
+ 
+  .top-bar {
+    background-color: #fffcef;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    font-weight: 500;
+    white-space: nowrap;
+    line-height: 150%;
+    padding: 52px 67px;
+  }
+
+ 
+  .company-name {
+    color: #000;
+    font: 36px Inter, sans-serif;
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+ 
+  .nav-actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-right: 10%;
+  }
+ 
+  @media (max-width: 991px) {
+    .nav-actions {
+      white-space: initial;
+    }
+  }
+ 
+  .search-label {
+    color: #000;
+    font: 20px Inter, sans-serif;
+    margin: auto 0;
+  }
+ 
+  .nav-icon {
+    aspect-ratio: 1.1;
+    width: 50px;
+    align-self: stretch;
+    margin: auto 0;
+  }
+ 
+  .login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3c8aff;
+    color: #fff;
+    padding: 14px 24px;
+    font: 16px Inter, sans-serif;
+    margin: auto 0;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    border-radius: 8px;
+  }
+  .login-button:active {
+     transform: scale(0.95);
+ }
+ 
+ 
+  .cart-icon {
+    aspect-ratio: 1;
+    width: 50px;
+    height: 50px;
+    align-self: stretch;
+    
+  }

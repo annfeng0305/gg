@@ -33,3 +33,11 @@ function setAutoPlay() {
 window.onload = function() {
     showSlides(slideIdx);
 }
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('sign').addEventListener('click', () => {
+        window.location.href = 'sign.html'; // Redirect to login page after logout
+    });
+    document.getElementById('noodle1').addEventListener('click', () => {
+        window.location.href = 'product.html'; // Redirect to login page after logout
+    });
+});
