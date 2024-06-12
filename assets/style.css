@@ -7,7 +7,7 @@ header {
     margin-top: 50px;
     margin-bottom: 50px;
     display: grid;
-    grid-template-columns: 60% 20% 20%;
+    grid-template-columns: 5% 75% 5% 5%;
 }
 
 nav img {
@@ -15,12 +15,12 @@ nav img {
 }
 
 nav.search {
-    grid-column: 2/3;
+    grid-column: 3/4;
     grid-row: 1/2;
 }
 
 nav.cart {
-    grid-column: 3/4;
+    grid-column: 4/5;
     grid-row: 1/2;
 }
 
