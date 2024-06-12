@@ -33,6 +33,7 @@ article.intro {
     height: 800px;
     background: url(/assets/images/製麵廠.jpg);
     background-size: cover;
+    opacity: 80%;
     border-radius: 1%;
 }
 

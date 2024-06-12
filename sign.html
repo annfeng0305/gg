@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>連成製麵廠 - 登入/註冊</title>
+    <link rel="stylesheet" href="/assets/style_sign.css">
+    <script src="/assets/scripts_sign.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container sign-up-container">
+            <form id="registerForm">
+                <h1>創建帳戶</h1>
+                <input type="text" placeholder="Name" required />
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Password" required />
+                <button type="submit">Sign up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form id="loginForm">
+                <h1>登入</h1>
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Password" required />
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>歡迎回來</h1>
+                    <p>輸入你的個人資料以完成登入</p>
+                    <button class="ghost" id="signIn">登入</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>新朋友嗎？</h1>
+                    <p>請輸入你的個人資訊以完成註冊</p>
+                    <button class="ghost" id="signUp">註冊</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
