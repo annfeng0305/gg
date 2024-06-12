@@ -101,7 +101,6 @@ article.product_display {
 article.intro {
     width: 100%;
     height: 100%;
-    background-size: cover;
     opacity: 80%;
     border-radius: 1%;
 }
