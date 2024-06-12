@@ -1,3 +1,37 @@
 body {
-    background-color: #fff;
+    background-color: #fffcef;
+}
+
+
+header {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+}
+
+nav img {
+    height: 50px;
+}
+
+nav.search {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+nav.cart {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+main {
+    padding: 8%;
+}
+
+article.intro {
+    width: 100%;
+    height: 800px;
+    background: url(/assets/images/製麵廠.jpg);
+    background-size: cover;
+    border-radius: 1%;
 }
