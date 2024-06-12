@@ -35,9 +35,9 @@ window.onload = function() {
 }
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('sign').addEventListener('click', () => {
-        window.location.href = 'sign.html'; // Redirect to login page after logout
+        window.location.href = 'sign.html';
     });
     document.getElementById('noodle1').addEventListener('click', () => {
-        window.location.href = 'product.html'; // Redirect to login page after logout
+        window.location.href = 'product.html';
     });
 });
