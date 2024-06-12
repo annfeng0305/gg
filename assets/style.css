@@ -11,7 +11,8 @@ header {
     margin-top: 50px;
     margin-bottom: 50px;
     display: grid;
-    grid-template-columns: 5% 75% 5% 5%;
+    grid-template-columns:  70% 4% 11% 4%;
+    grid-gap: 20px;
 }
 
 nav img {
@@ -19,8 +20,18 @@ nav img {
 }
 
 nav.search {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+nav.login {
     grid-column: 3/4;
     grid-row: 1/2;
+}
+
+nav button {
+    background-color: rgb(56, 190, 243);
+    font-size: 15px;
 }
 
 nav.cart {
@@ -31,8 +42,6 @@ nav.cart {
 main {
     padding: 8%;
 }
-
-
 
 div.title {
     text-align: center;
@@ -47,12 +56,14 @@ article.product_display {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 10%;
+    grid-gap: 5%;
 }
 
 .product_photo {
     width: 100%;
-    border-radius: 25px;
+    height: fit-content;
+    border-radius: 10px;
+    height: auto;
 }
 
 .product_1 {
@@ -97,6 +108,7 @@ article.intro {
 
 .gallery_img {
     height: 400px;
+    border-radius: 7px;
 }
 
 .container {
@@ -148,7 +160,6 @@ article.intro {
     font-weight: bold;
 }
 
-
 .dot {
     cursor: pointer;
     height: 15px;
@@ -160,8 +171,7 @@ article.intro {
     transition: 0.6s ease;
 }
 
-.active,
-.dot:hover {
+.active, .dot:hover {
     background-color: #717171;
 }
 
