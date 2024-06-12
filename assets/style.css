@@ -1,7 +1,11 @@
-body {
-    background-color: #fffcef;
+* {
+    box-sizing: border-box
 }
 
+body {
+    background-color: #fffcef;
+    user-select: none;
+}
 
 header {
     margin-top: 50px;
@@ -28,14 +32,7 @@ main {
     padding: 8%;
 }
 
-article.intro {
-    width: 100%;
-    height: 800px;
-    background: url(/assets/images/製麵廠.jpg);
-    background-size: cover;
-    opacity: 80%;
-    border-radius: 1%;
-}
+
 
 div.title {
     text-align: center;
@@ -87,4 +84,98 @@ article.product_display {
     padding: 5px;
     grid-column: 3/4;
     grid-row: 2/3;
+}
+
+/* 動態廣告 */
+article.intro {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 80%;
+    border-radius: 1%;
+}
+
+.gallery_img {
+    height: 400px;
+}
+
+.container {
+    width: 800px;
+    height: 410px;
+    position: relative;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+}
+
+.show {
+    display: block;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    transition: 0.6s ease;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.text {
+    color: #fff;
+    font-size: 40px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }

@@ -14,7 +14,38 @@
     </header>
     <main>
         <article class="intro">
-            <div class="title">連成製麵廠</div>
+            <div class="container">
+                <div class="slide fade">
+                    <img src="/assets/images/製麵廠.jpg" class="gallery_img">
+                    <div class="text">連成製麵廠</div>
+                    <div class="text" style=" font-size:16px; top: 55%; font-weight: 1;">嘉義最頂的春捲皮</div>
+                </div>
+                <div class="slide fade">
+                    <div><img src="/assets/images/陽春麵.jpg" class="gallery_img"></div>
+                    <div class="text"></div>
+                </div>
+                <div class="slide fade">
+                    <img src="/assets/images/米豆簽.jpg" class="gallery_img">
+                    <div class="text"></div>
+                </div>
+                <div class="slide fade">
+                    <img src="/assets/images/養生健康麵條(蕎麥口味).jpg" class="gallery_img">
+                    <div class="text"></div>
+                </div>
+                <div class="slide fade">
+                    <img src="/assets/images/養生健康麵條.jpg" class="gallery_img">
+                    <div class="text"></div>
+                </div>
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+            <div style="text-align: center;">
+                <span class="dot" onclick="showSlides(1)"></span>
+                <span class="dot" onclick="showSlides(2)"></span>
+                <span class="dot" onclick="showSlides(3)"></span>
+                <span class="dot" onclick="showSlides(4)"></span>
+                <span class="dot" onclick="showSlides(5)"></span>
+            </div>
         </article>
         <article class="product_display">
             <div class="product_1"><img src="/assets/images/陽春麵.jpg" class="product_photo">陽春麵</div>
